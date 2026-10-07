@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Birthday Surprise 🎂</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================================= -->
+    <!--                  BACKGROUND                       -->
+    <!-- ================================================= -->
+
+    <div class="background">
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--                  MUSIC                             -->
+    <!-- ================================================= -->
+
+    <audio id="backgroundMusic"
+           loop
+           preload="auto">
+
+        <source src="./music.mp3"
+                type="audio/mpeg">
+
+    </audio>
+
+
+    <button id="musicButton"
+            class="music-button"
+            onclick="toggleMusic()">
+
+        🎵
+
+    </button>
+
+
+
+    <!-- ================================================= -->
+    <!--                  OPENING SCREEN                    -->
+    <!-- ================================================= -->
+
+    <section id="opening"
+             class="screen">
+
+
+        <div class="opening-card">
+
+
+            <div class="gift-icon">
+
+                🎁
+
+            </div>
+
+
+            <p class="tiny-title">
+
+                A LITTLE SOMETHING FOR YOU
+
+            </p>
+
+
+            <h1>
+
+                Hey! 👀
+
+            </h1>
+
+
+            <p class="opening-text">
+
+                I made something special for you...
+
+            </p>
+
+
+            <button class="main-button"
+                    onclick="startSurprise()">
+
+                <span>
+                    ✨ Open Your Surprise
+                </span>
+
+            </button>
+
+
+            <p class="tap-hint">
+
+                Tap to begin your little adventure
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  BIRTHDAY SCREEN                   -->
+    <!-- ================================================= -->
+
+    <section id="birthday"
+             class="screen hidden">
+
+
+        <div class="balloon-container">
+
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+
+        </div>
+
+
+
+        <div class="birthday-card">
+
+
+            <div class="mini-balloons">
+
+                🎈 ✨ 🎈
+
+            </div>
+
+
+            <p class="small-heading">
+
+                TODAY IS ALL ABOUT YOU
+
+            </p>
+
+
+            <h1>
+
+                HAPPY
+                <span>BIRTHDAY</span>
+
+            </h1>
+
+
+            <h2 class="friend-name">
+
+                Khushi 💖
+
+            </h2>
+
+
+            <div class="divider">
+
+                ✦
+
+            </div>
+
+
+            <p class="birthday-text">
+
+                May your day be filled with
+                happiness, laughter and beautiful
+                little moments that stay with you
+                forever. ✨
+
+            </p>
+
+
+            <button class="main-button"
+                    onclick="showMemories()">
+
+                📸
+                <span>Continue</span>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  MEMORY GALLERY                    -->
+    <!-- ================================================= -->
+
+    <section id="memories"
+             class="page hidden">
+
+
+        <div class="section-header">
+
+            <p class="small-heading">
+
+                LITTLE MOMENTS
+
+            </p>
+
+
+            <h1>
+
+                📸 Memories
+
+            </h1>
+
+
+            <p>
+
+                Some moments worth keeping forever.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="gallery">
+
+
+            <div class="photo-card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://res.cloudinary.com/ihvl1l2t/image/upload/v1791348819/photo1.jpg
+"
+                         alt="Memory 1">
+
+                </div>
+
+
+                <div class="photo-info">
+
+                    <span>
+                        MEMORY 01
+                    </span>
+
+                    <h3>
+                        One of those moments ✨
+                    </h3>
+
+                    <p>
+                        A little memory worth smiling about.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="photo-card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://res.cloudinary.com/ihvl1l2t/image/upload/v1791348818/photo2.jpg"
+                         alt="Memory 2">
+
+                </div>
+
+
+                <div class="photo-info">
+
+                    <span>
+                        MEMORY 02
+                    </span>
+
+                    <h3>
+                        Another beautiful day 🌸
+                    </h3>
+
+                    <p>
+                        Some memories just feel special.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="photo-card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://res.cloudinary.com/ihvl1l2t/image/upload/v1791348818/photo3.jpg"
+                         alt="Memory 3">
+
+                </div>
+
+
+                <div class="photo-info">
+
+                    <span>
+                        MEMORY 03
+                    </span>
+
+                    <h3>
+                        And one more ✨
+                    </h3>
+
+                    <p>
+                        Because three memories aren't enough.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button class="main-button"
+                onclick="showMessage()">
+
+            💌
+            <span>There's Something I Want To Say</span>
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  MESSAGE SCREEN                    -->
+    <!-- ================================================= -->
+
+    <section id="message"
+             class="page hidden">
+
+
+        <div class="message-card">
+
+
+            <div class="message-icon">
+
+                💌
+
+            </div>
+
+
+            <p class="small-heading">
+
+                A FEW WORDS FOR YOU
+
+            </p>
+
+
+            <h1>
+
+                Just wanted to say...
+
+            </h1>
+
+
+            <div id="typingMessage"
+                 class="typing-message">
+
+            </div>
+
+
+            <div class="cursor"></div>
+
+
+            <button id="messageButton"
+                    class="main-button hidden"
+                    onclick="showCake()">
+
+                🎂
+                <span>One Last Surprise</span>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  CAKE SCREEN                       -->
+    <!-- ================================================= -->
+
+    <section id="cake"
+             class="page hidden">
+
+
+        <div class="cake-section">
+
+
+            <p class="small-heading">
+
+                MAKE A WISH
+
+            </p>
+
+
+            <h1>
+
+                🎂 Your Birthday Cake
+
+            </h1>
+
+
+            <p class="cake-subtitle">
+
+                Close your eyes... make a wish... ✨
+
+            </p>
+
+
+
+            <div class="cake-wrapper">
+
+
+                <div class="candle">
+
+                    <div class="flame"></div>
+
+                </div>
+
+
+                <div class="cake-top">
+
+                    <div class="cream cream-one"></div>
+
+                    <div class="cream cream-two"></div>
+
+                    <div class="cream cream-three"></div>
+
+                </div>
+
+
+                <div class="cake-body">
+
+                    <div class="cake-layer layer-one"></div>
+
+                    <div class="cake-layer layer-two"></div>
+
+                </div>
+
+
+                <div class="cake-plate"></div>
+
+
+            </div>
+
+
+
+            <button id="wishButton"
+                    class="main-button"
+                    onclick="blowCandle()">
+
+                ✨
+                <span>Make a Wish</span>
+
+            </button>
+
+
+            <p id="wishMessage"
+               class="wish-message">
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  FINAL SCREEN                      -->
+    <!-- ================================================= -->
+
+    <section id="final"
+             class="page hidden">
+
+
+        <div class="final-card">
+
+
+            <div class="final-stars">
+
+                ✨ ✦ ✨
+
+            </div>
+
+
+            <h1>
+
+                Happy Birthday! 🎉
+
+            </h1>
+
+
+            <p>
+
+                Here's to another year of
+                amazing memories,
+                laughter and happiness.
+
+            </p>
+
+
+            <div class="final-heart">
+
+                💖
+
+            </div>
+
+
+            <p class="final-small">
+
+                Never stop smiling. ✨
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!--                  CONFETTI                         -->
+    <!-- ================================================= -->
+
+    <canvas id="confettiCanvas"></canvas>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
